@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div id="head">
+        <h1 id="h1"><img id="кар2" src="/static\images\Ресурс 2.png" alt="Здесь должна быть картинка">Капибаржи
+        </h1>
+        <hr id="hr">
+        </hr>
+        <p id="p">Преобразуйте аудио в текст, прослушивайте, корректируйте,<br> сохраняйте!<br /></p>
+      </div>
+      <div id="button1">
+        <label for="audioInput">Загрузить аудио</label>
+        <input type="file" accept=".mp3,.WAV,.AIF,.MID" id="audioInput" hidden onchange="saveFile(event)">
+        <button class="button first">Транскрибация</button>
+      </div>
+      <div id="button2">
+        <button class="button second">Выбор голоса</button><button class="image-button"></button>
+        <button class="button second">Перевод</button>
+      </div>
+      <div id="text">
+        <textarea id="recognizedText" readonly></textarea>
+      </div>
+      
+      <div id="end">
+        <button type="button" class="button second" onclick="saveAudio()">Сохранить</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Добавлен скрипт для обработки событий загрузки файла и сохранения -->
+  <script>
+    // function saveFile(event) {
+    //   const input = event.target;
+    //   const file = input.files[0];
+  
+    //   if (file) {
+    //     const formData = new FormData();
+    //     formData.append('audioFile', file);
+  
+    //     // Отправляем файл на сервер с использованием Fetch API
+    //     fetch('http://127.0.0.1:5000/upload', {
+    //       method: 'POST',
+    //       body: formData,
+    //       headers: {
+    //         'Accept': 'application/json',
+    //         // Если сервер ожидает JSON, добавьте следующую строку:
+    //         // 'Content-Type': 'application/json'
+    //       }
+    //     })
+    //     .then(response => {
+    //       if (!response.ok) {
+    //         throw new Error(`HTTP error! Status: ${response.status}`);
+    //       }
+    //       return response.text();
+    //     })
+    //     .then(data => {
+    //       console.log('Сервер ответил:', data);
+    //       // Дополнительная обработка ответа, если необходимо
+    //     })
+    //     .catch(error => {
+    //       console.error('Произошла ошибка при отправке файла:', error);
+    //     });
+    //   }
+    // }
+
+  function saveFile(event) {
+    const input = event.target;
+    const file = input.files[0];
+
+    if (file) {
+      const formData = new FormData();
+      formData.append('audioFile', file);
+
+      fetch('http://127.0.0.1:5000/upload', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        console.log('Сервер ответил:', data);
+
+        // Обновляем поле textarea с распознанным текстом
+        document.getElementById('recognizedText').value = data;
+      })
+      .catch(error => {
+        console.error('Произошла ошибка при отправке файла:', error);
+      });
+    }
+  }
+
+
+  </script>
+  
+</body>
+
+</html>

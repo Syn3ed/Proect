@@ -1,0 +1,479 @@
+#h1 {
+    color:#323232;
+    text-align:center;
+    font-style: Georgia;
+    font-size: 72px;
+    font-weight: normal;
+    padding: 0;
+    margin:0;
+  }
+
+#p {
+    color:#323232;
+    text-align:center;
+    line-height: normal;
+    font-size: 28px;
+    font-weight:normal;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#hr{
+  margin-top:30px;
+  background-color: #323232;
+  border-bottom:0;
+  height:9px;
+  width:780px;
+}
+body{
+  background:#DDD0C8;
+}
+#head{
+  width:100%;
+  height:85px;
+}
+#container{
+  margin:auto auto;
+  text-align: center;
+  width:100%;
+  height:750px;
+  min-width:1300px;
+  
+}
+#button1
+{
+margin-top:15%;
+width:100%;
+height:40px;
+display: inline-block;
+}
+#button2
+{
+margin-top:10.5%;
+width:100%;
+height:40px;
+display: inline-block;
+vertical-align:middle;
+}
+#кар2
+{
+  position: relative;
+  top:30px;
+}
+#text
+{
+margin-top:10px;
+width:100%;
+height:550px;
+}
+#end
+{
+width:100%;
+height:85px;
+margin-top:12px;
+}
+button
+{
+border: none;
+outline: none;
+text-decoration: none;
+font-family: 'Libre Franklin', sans-serif;
+cursor: pointer;
+color:#FFFFFF;
+}
+.button.first
+{
+background-color:#73302E;
+padding:18px;
+font-size:16px;
+border-radius: 30px;
+width:160px;
+margin-left:50px;
+}
+.button.first:hover{
+  background-color: #99403d ;
+}
+.button.second
+{
+background-color:#735861;
+margin-inline:36px;
+padding:12px;
+font-size:16px;
+border-radius: 30px;
+width:160px;
+}
+.button.second:hover{
+  background-color: #8f6e79;
+}
+.image-button
+{
+position: relative;
+bottom:5px;
+background-image:url("Ресурс\ 4.png");
+background-size: cover;
+background-color: transparent;
+padding:20px;
+border-radius: 50px;
+width:63px;
+border: none;
+outline: none;
+text-decoration: none;
+}
+label {
+  background-color: #73302E;
+  color: #FFFFFF;
+  padding: 18px;
+  font-family: 'Libre Franklin', sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+}
+label:hover{
+  background-color: #99403d ;
+}
+
+textarea
+{
+resize:none;
+width:440px;
+height:100%;
+border-radius: 5px;
+}
+@media screen and (min-width:280px) and (max-width:479px)
+{
+#h1{
+  font-size: 46px;
+  padding: 0;
+  margin:0;
+}
+#p
+{
+  font-size:20px;
+  line-height: normal;
+  display: inline;
+  font-weight:normal;
+  
+}
+#hr{
+  margin-top:20px;
+  background-color: #323232;
+  border-bottom:0;
+  height:9px;
+  width:100%;
+}
+#container{
+min-width:320px;
+width:100%;
+height:490px;
+padding-right:16px;
+
+}
+#head{
+width:100%;
+height: 70px;
+}
+#button1
+{
+margin-top:235px;
+width:100%;
+height:20px;
+display: inline-block;
+}
+.button.first
+{
+background-color:#73302E;
+padding:16px;
+font-size:14px;
+border-radius: 30px;
+width:130px;
+margin-left:10px;
+}
+#button2
+{
+margin-top:80px;
+width:100%;
+height:40px;
+display: inline-block;
+vertical-align:middle;
+}
+.button.second
+{
+background-color:#735861;
+margin-inline:5px;
+padding:10px;
+font-size:12px;
+border-radius: 30px;
+width:100px;
+}
+.image-button
+{
+position: relative;
+bottom:5px;
+background-image:url("Ресурс\ 4.png");
+background-size: cover;
+background-color: transparent;
+padding:13px;
+border-radius: 50px;
+width:42px;
+border: none;
+outline: none;
+text-decoration: none;
+}
+#кар2
+{
+position: relative;
+top:20px;
+}
+#text
+{
+margin-top:4px;
+width:100%;
+height:300px;
+}
+textarea
+{
+resize:none;
+width:255px;
+height:100%;
+border-radius: 5px;
+}
+#end
+{
+width:100%;
+height:55px;
+margin-top:14px;}
+label {
+  background-color: #73302E;
+  color: #FFFFFF;
+  padding:16px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size:14px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+}
+@media screen and (min-width:480px) and (max-width:767px)
+{
+  #h1{
+    font-size: 54px;
+    padding: 0;
+    margin:0;
+  }
+  #p
+  {
+    font-size:24px;
+    line-height: normal;
+    display: flex;
+    font-weight:normal;
+    margin-top:20px;
+  }
+  #hr{
+    margin-top:25px;
+    background-color: #323232;
+    border-bottom:0;
+    height:9px;
+    width:100%;
+  }
+  #container{
+  min-width:480px;
+  width:100%;
+  height:666px;
+  padding-right:16px;
+  padding-left:16px;
+  }
+  #head{
+  width:100%;
+  height: 85px;
+  }
+  #button1
+  {
+  margin-top:235px;
+  width:100%;
+  height:20px;
+  display: inline-block;
+  }
+  .button.first
+  {
+  background-color:#73302E;
+  padding:16px;
+  font-size:14px;
+  border-radius: 30px;
+  width:130px;
+  margin-left:25px;
+  }
+  #button2
+  {
+  margin-top:80px;
+  width:100%;
+  height:40px;
+  display: inline-block;
+  vertical-align:middle;
+  }
+  .button.second
+  {
+  background-color:#735861;
+  margin-inline:28px;
+  padding:10px;
+  font-size:12px;
+  border-radius: 30px;
+  width:100px;
+  }
+  .image-button
+  {
+  position: relative;
+  bottom:5px;
+  background-image:url("Ресурс\ 4.png");
+  background-size: cover;
+  background-color: transparent;
+  padding:14px;
+  border-radius: 50px;
+  width:44px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  }
+  #кар2
+  {
+  position: relative;
+  top:30px;
+  }
+  #text
+  {
+  margin-top:4px;
+  width:100%;
+  height:350px;
+  }
+  textarea
+  {
+  resize:none;
+  width:300px;
+  height:100%;
+  border-radius: 5px;
+  }
+  #end
+  {
+  width:100%;
+  height:55px;
+  margin-top:15px;}
+  label {
+    background-color: #73302E;
+    color: #FFFFFF;
+    padding:16px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:14px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1100px)
+{
+  #h1{
+    font-size: 64px;
+    padding: 0;
+    margin:0;
+  }
+  #p
+  {
+    font-size:24px;
+    line-height: normal;
+    display:inline;
+    font-weight:normal;
+    
+  }
+  #hr{
+    margin-top:25px;
+    background-color: #323232;
+    border-bottom:0;
+    height:9px;
+    width:670px;
+  }
+  #container{
+  min-width:768px;
+  width:100%;
+  height:960px;
+  padding-right:16px;
+  padding-left:16px;
+  }
+  #head{
+  width:100%;
+  height: 85px;
+  }
+  #button1
+  {
+  margin-top:235px;
+  width:100%;
+  height:20px;
+  display: inline-block;
+  }
+  .button.first
+  {
+  background-color:#73302E;
+  padding:16px;
+  font-size:16px;
+  border-radius: 30px;
+  width:160px;
+  margin-left:30px;
+  }
+  #button2
+  {
+  margin-top:120px;
+  width:100%;
+  height:40px;
+  display: inline-block;
+  vertical-align:middle;
+  }
+  .button.second
+  {
+  background-color:#735861;
+  margin-inline:62px;
+  padding:10px;
+  font-size:14px;
+  border-radius: 30px;
+  width:140px;
+  }
+  .image-button
+  {
+  position: relative;
+  bottom:5px;
+  background-image:url("Ресурс\ 4.png");
+  background-size: cover;
+  background-color: transparent;
+  padding:18px;
+  border-radius: 62px;
+  width:58px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  }
+  #кар2
+  {
+  position: relative;
+  top:30px;
+  }
+  #text
+  {
+  margin-top:6px;
+  width:100%;
+  height:590px;
+  }
+  textarea
+  {
+  resize:none;
+  width:450px;
+  height:100%;
+  border-radius: 5px;
+  }
+  #end
+  {
+  width:100%;
+  height:55px;
+  margin-top:20px;}
+  label {
+    background-color: #73302E;
+    color: #FFFFFF;
+    padding:16px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:16px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
+
